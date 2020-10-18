@@ -1,10 +1,12 @@
 package lab02;
 
+//na same spacje !!
+
 public class mainclass {
 
 	public static void main(String[] args) {
 		//String
-		String a = "Strings are constant their values cannot be changed after they are created";
+		String a = "Strings are constant, their values cannot be changed after they are created";
 		//Konstruktor
 		lancuch lancuch1 = new lancuch(a);
 		//D³ugoœæ stringa
@@ -12,9 +14,9 @@ public class mainclass {
 		//Iloœæ liter
 		System.out.println("Ilosc liter to: " + lancuch1.dajIloscLiter());
 		//Iloœæ wielkich liter
-		
+		System.out.println("Ilosc wielkich liter to: " + lancuch1.dajIloscWielkichLiter());
 		//Iloœæ ma³ych liter
-		
+		System.out.println("Ilosc malych liter to: " + lancuch1.dajIloscMalychLiter());
 		//Iloœæ samog³osek
 		
 		//Iloœæ wyrazów

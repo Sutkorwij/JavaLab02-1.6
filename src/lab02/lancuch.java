@@ -29,7 +29,17 @@ public class lancuch {
 	}
 	public int dajIloscWielkichLiter()
 	{
-		
+		char parts[] = str.toCharArray();
+		int ilosc = 0;
+		for(int i = 0; i<parts.length; i++)
+		{
+		boolean a = Character.isUpperCase(parts[i]);
+		if(a == true)
+		{
+			ilosc++;
+		}
+		}
+		return ilosc;
 	}
 	public int dajIloscMalychLiter()
 	{

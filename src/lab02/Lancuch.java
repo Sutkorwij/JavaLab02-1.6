@@ -13,13 +13,52 @@ public class Lancuch {
 		return str;
 	}
 	
+	
+	private String part(String a) {
+		String replaced = a;
+		replaced = replaced.replace('.',' ');
+		replaced = replaced.replace(',',' ');
+		replaced = replaced.replace('/',' ');
+		replaced = replaced.replace('-',' ');
+		replaced = replaced.replace('=',' ');
+		replaced = replaced.replace('+',' ');
+		replaced = replaced.replace('(',' ');
+		replaced = replaced.replace(')',' ');
+		replaced = replaced.replace('!',' ');
+		replaced = replaced.replace('@',' ');
+		replaced = replaced.replace('#',' ');
+		replaced = replaced.replace('$',' ');
+		replaced = replaced.replace('%',' ');
+		replaced = replaced.replace('^',' ');
+		replaced = replaced.replace('&',' ');
+		replaced = replaced.replace('*',' ');
+		replaced = replaced.replace('_',' ');
+		replaced = replaced.replace('|',' ');
+		replaced = replaced.replace('{',' ');
+		replaced = replaced.replace('}',' ');
+		replaced = replaced.replace('[',' ');
+		replaced = replaced.replace(']',' ');
+		replaced = replaced.replace(':',' ');
+		replaced = replaced.replace(';',' ');
+		replaced = replaced.replace('<',' ');
+		replaced = replaced.replace('>',' ');
+		replaced = replaced.replace('?',' ');
+		for(int i = 0; i < 10; i++)
+		{
+		replaced = replaced.replace("  "," ");
+		replaced = replaced.replace("   ", " ");
+		}
+		return(replaced);
+	}
+	
 	public int dajDlugoscLanchucha()
 	{
 		return str.length();
 	}
 	public int dajIloscLiter()
 	{
-		String parts[] = str.split(" ");
+		String temp = part(str);
+		String parts[] = temp.split(" ");
 		int dlugosc = 0;
 		for(int i = 0; i<parts.length; i++)
 		{
@@ -60,7 +99,8 @@ public class Lancuch {
 	}
 	public int dajIloscWyrazow()
 	{
-		String parts[] = str.split(" ");
+		String temp = part(str);
+		String parts[] = temp.split(" ");
 		int ilosc = 0;
 		for (int i=0; i<parts.length;i++)
 		{
@@ -70,7 +110,8 @@ public class Lancuch {
 	}
 	public String dajNajkrotszyWyraz()
 	{
-		String parts[] = str.split(" ");
+		String temp = part(str);
+		String parts[] = temp.split(" ");
 		String shortest = parts[0];
 		for (int i=1; i <parts.length;i++)
 		{
@@ -83,7 +124,8 @@ public class Lancuch {
 	}
 	public String dajNajdluzszyWyraz()
 	{
-		String parts[] = str.split(" ");
+		String temp = part(str);
+		String parts[] = temp.split(" ");
 		String longest = parts[0];
 		for (int i=1; i <parts.length;i++)
 		{

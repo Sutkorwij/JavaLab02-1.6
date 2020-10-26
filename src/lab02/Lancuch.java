@@ -1,9 +1,9 @@
 package lab02;
 
-public class lancuch {
+public class Lancuch {
 
 	private String str;
-	public lancuch (String b)
+	public Lancuch (String b)
 	{
 		str=b;
 	}

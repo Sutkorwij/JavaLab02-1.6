@@ -2,13 +2,13 @@ package lab02;
 
 //na same spacje !!
 
-public class mainclass {
+public class Mainclass {
 
 	public static void main(String[] args) {
 		//String
 		String a = "Strings are constant their values cannot be changed after they are created";
 		//Konstruktor
-		lancuch lancuch1 = new lancuch(a);
+		Lancuch lancuch1 = new Lancuch(a);
 		
 		if(a==null || a=="")
 		{

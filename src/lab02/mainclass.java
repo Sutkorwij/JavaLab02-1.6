@@ -9,6 +9,13 @@ public class mainclass {
 		String a = "Strings are constant their values cannot be changed after they are created";
 		//Konstruktor
 		lancuch lancuch1 = new lancuch(a);
+		
+		if(a==null || a=="")
+		{
+			System.out.println("Nieprawidlowy string");
+		}
+		else
+		{
 		//D³ugoœæ stringa
 		System.out.println("Dlugosc stringa to: "+ lancuch1.dajDlugoscLanchucha());
 		//Iloœæ liter
@@ -29,6 +36,7 @@ public class mainclass {
 		System.out.println("Dlugosc najkrotszego wyrazu to: " + lancuch1.dajDlugoscNajkrotszegoWyrazu());
 		//D³ugoœæ najd³u¿szego wyrazu
 		System.out.println("Dlugosc najkrotszego wyrazu to: " + lancuch1.dajDlugoscNajdluzszegoWyrazu());
+		}
 	}
 
 }

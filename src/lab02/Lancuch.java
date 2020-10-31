@@ -3,24 +3,26 @@ package lab02;
 public class Lancuch {
 
 	private String str;
-	public Lancuch (String b)
+	public Lancuch (String a)
 	{
-		str=b;
+		str=a;
 	}
 	
-	public String stringgetter()
+	public String stringGetter()
 	{
 		return str;
 	}
 	
+	public void stringSetter(String a)
+	{
+		str = a;
+	}
 	
-	private String part(String a) {
+	
+	public String part(String a) {
 		String replaced = a;
-		
 		replaced = replaced.replaceAll("[^A-Za-z ]", ""); // tylko litery
-		
 		replaced = replaced.replaceAll("\\s+", " "); // usuwanie nadmiernych spacji
-	
 		return(replaced);
 	}
 	
@@ -30,8 +32,7 @@ public class Lancuch {
 	}
 	public int dajIloscLiter()
 	{
-		String temp = part(str);
-		String parts[] = temp.split(" ");
+		String parts[] = str.split(" ");
 		int dlugosc = 0;
 		for(int i = 0; i<parts.length; i++)
 		{

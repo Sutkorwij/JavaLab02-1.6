@@ -3,14 +3,18 @@ package lab02;
 public class Mainclass {
 
 	public static void main(String[] args) {
-		//String
 		String a = "Strings,,,                            are constant, their%% values cannot #be changed !!after@ they are -created";
-		//Konstruktor
-		Lancuch lancuch1 = new Lancuch(a);
-		
-		if(a==null || a=="" || a=="." || a==" " || a=="," || a==", " )
+//		String a = null;
+//		String a = ".";
+		if (a!=null)
 		{
-			System.out.println("Nieprawidlowy string");
+		Lancuch lancuch1 = new Lancuch(a);
+		a = lancuch1.part(a);
+		lancuch1.stringSetter(a);
+		
+		if(a=="")
+		{
+			System.out.println("Pusty string");
 		}
 		else
 		{
@@ -34,6 +38,12 @@ public class Mainclass {
 		System.out.println("Dlugosc najkrotszego wyrazu to: " + lancuch1.dajDlugoscNajkrotszegoWyrazu());
 		//D³ugoœæ najd³u¿szego wyrazu
 		System.out.println("Dlugosc najkrotszego wyrazu to: " + lancuch1.dajDlugoscNajdluzszegoWyrazu());
+		}
+		
+		}
+		else
+		{
+		System.out.println("String nullowy");
 		}
 	}
 

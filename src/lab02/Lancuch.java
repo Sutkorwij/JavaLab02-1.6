@@ -2,7 +2,6 @@ package lab02;
 
 public class Lancuch {
 
-	private boolean cont = true;
 	private String str;
 	public Lancuch (String b)
 	{
@@ -17,32 +16,8 @@ public class Lancuch {
 	
 	private String part(String a) {
 		String replaced = a;
-		replaced = replaced.replace(".","");
-		replaced = replaced.replace(",","");
-		replaced = replaced.replace("-","");
-		replaced = replaced.replace("=","");
-		replaced = replaced.replace("+","");
-		replaced = replaced.replace("(","");
-		replaced = replaced.replace(")","");
-		replaced = replaced.replace("!","");
-		replaced = replaced.replace("@","");
-		replaced = replaced.replace("#","");
-		replaced = replaced.replace("$","");
-		replaced = replaced.replace("%","");
-		replaced = replaced.replace("^","");
-		replaced = replaced.replace("&","");
-		replaced = replaced.replace("*","");
-		replaced = replaced.replace("_","");
-		replaced = replaced.replace("|","");
-		replaced = replaced.replace("{","");
-		replaced = replaced.replace("}","");
-		replaced = replaced.replace("[","");
-		replaced = replaced.replace("]","");
-		replaced = replaced.replace(":","");
-		replaced = replaced.replace(";","");
-		replaced = replaced.replace("<","");
-		replaced = replaced.replace(">","");
-		replaced = replaced.replace("?","");
+		
+		replaced = replaced.replaceAll("[^A-Za-z ]", "");
 		
 		for(int i=0; i<2; i++)
 		{

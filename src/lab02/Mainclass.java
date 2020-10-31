@@ -4,7 +4,7 @@ public class Mainclass {
 
 	public static void main(String[] args) {
 		//String
-		String a = "Strings,,,         are constant, their%% values cannot #be changed !!after@ they are -created";
+		String a = "Strings,,,                            are constant, their%% values cannot #be changed !!after@ they are -created";
 		//Konstruktor
 		Lancuch lancuch1 = new Lancuch(a);
 		

@@ -17,14 +17,10 @@ public class Lancuch {
 	private String part(String a) {
 		String replaced = a;
 		
-		replaced = replaced.replaceAll("[^A-Za-z ]", "");
+		replaced = replaced.replaceAll("[^A-Za-z ]", ""); // tylko litery
 		
-		for(int i=0; i<2; i++)
-		{
-		replaced = replaced.replaceAll("   ", " ");
-		}
-		replaced = replaced.replaceAll("  ", " ");
-		
+		replaced = replaced.replaceAll("\\s+", " "); // usuwanie nadmiernych spacji
+	
 		return(replaced);
 	}
 	
